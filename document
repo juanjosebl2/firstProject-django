@@ -1,0 +1,27 @@
+Instalar
+sudo apt install python3
+sudo apt install python3-pip
+sudo apt install python3-virtualenv
+pip install virtualenv
+apt install python3.10-venv
+
+Creamos carpeta y creamos entorno virtual parecido a docker
+virtualenv venv
+
+para activarlo
+source venv/bin/activate
+
+Abre con vscode y si presionas f1 y pones select interpreted de python y seleccionas el recomendado
+automaticamente te activa el venv cuando abras una terminal
+
+Instalar django
+pip install django 
+
+Crear proyecto, el punto es por si estas ya en la carpeta que lo cree directamente
+django-admin startproject firstProyect .
+
+Ejecutar el proyecto, 3000 para decir el puerto
+python manage.py runserver 3000
+
+Para ver conmando basicos
+python manage.py --help
