@@ -6,3 +6,7 @@ def Home(request):
 
 def About(request):
     return HttpResponse("<h1>About</h1>")
+
+def Hello(request, username):
+    #print(type(username))
+    return HttpResponse("<h1>Hello %s</h1>" % username)

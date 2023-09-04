@@ -25,3 +25,26 @@ python manage.py runserver 3000
 
 Para ver conmando basicos
 python manage.py --help
+
+Para crear aplicaciones o componentes
+python manage.py startapp tasks
+
+Para migraciones, al final myapp por ejemplo si quiero migrar una sola aplicaion
+python manage.py makemigrations myapp
+python manage.py migrate myapp
+
+En settings de mi carpeta main para modificar la base de datos y añadir aplicaciones
+
+Abrir shell python y añadir datos a la base de datos
+python manage.py shell
+from myapp.models import Project, Task
+p = Project(name="aplicacion movil")
+p.save()
+
+Para visualizar datos
+Project.objects.all()
+Project.objects.get(id=2)
+
+p = Project.objects.get(id=1)
+p.task_set.create(title="descargar")
+p.task_set.all()
