@@ -48,3 +48,10 @@ Project.objects.get(id=2)
 p = Project.objects.get(id=1)
 p.task_set.create(title="descargar")
 p.task_set.all()
+
+Crear superusuario para poder entrar en /admin
+python manage.py createsuperuser
+
+En admin.py para modificar opciones de admin, por ejemplo
+añadir projectos y tareas para poder crear filas o eliminar
+
